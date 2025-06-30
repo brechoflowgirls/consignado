@@ -442,6 +442,29 @@
             left: 5%;
             animation-delay: 4s;
         }
+                /* Scrollbar para navegadores WebKit (Chrome, Edge, Safari) */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background-color: #fe65c4;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
+        
+        /* Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #fe65c4 rgba(255, 255, 255, 0.3);
+        }
+
 
         @keyframes floatRandom {
 
